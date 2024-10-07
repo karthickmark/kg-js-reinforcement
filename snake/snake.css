@@ -1,0 +1,108 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #e3f2fd;
+}
+.wrapper{
+    width: 65vmin;
+    height: 75vmin;
+    background:#293447;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.game-details{
+    color: #b8c6dc;
+    font-size: 1.2rem;
+    font-weight: 500 ;
+    padding: 20px 27px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.play-board{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template:repeat(30, 1fr) / repeat(30,1fr);
+    background: #212837;
+}
+
+.play-board .food{
+    background: #ff003d;
+}
+
+.play-board .head{
+    background: #cb06ff;
+}
+
+.img-pop>.pop-content>img{
+    width: 400px;
+    height: 300px;
+}
+
+.img-pop{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    opacity: 0;
+    z-index: -10;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0,0,0,0.6);
+    transition: opacity 0.4s ease;
+}
+
+.img-pop.show{
+    opacity: 1;
+    z-index: 1;
+}
+.pop-content{
+    background-color: #e3f2fd;
+    /* background-color: violet; */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.pop-content>.pop-text>h1{
+    text-align: center;
+}
+.pop-content>.pop-text{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.pop-content>.pop-text>button{
+    height: 40px;
+    border-radius: 10px;
+    color: #293447;
+    font-size: x-large;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.pop-content>.pop-text>button:hover{
+   background-color: #ff003d;
+    margin: 5px;
+    cursor: pointer;
+
+}
+
+
+
+

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HANGMAN</title>
+    <link rel="stylesheet" href="./hangman.css">
+    <script src="./wordlist.js" ></script>
+</head>
+<body>
+    <div class="game-modal">
+        <div class="content">
+            <img src="../assets/you loose.gif" alt="">
+            <h4>Game Over</h4>
+            <p>The Correct answer is <b>ben10</b></p>
+            <button class="play-again">Play Again</button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="hang-man-box">
+            <img src="./hangman/hangman 0.png" alt="hangman">
+            <h1>HANGMAN</h1>
+        </div>
+        <div class="game-box">
+            <ul class="word-display"></ul>
+            <h3 class="hint-text">Hint: <b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, modi.</b></h3>
+            <h3 class="guess-text">incorrect guesses: <b>0/6</b></h3>
+            <div class="keyboard"></div>
+            </div>
+        </div>
+     
+    </div>
+</body>
+<script src="./hangman.js" ></script>
+</html>

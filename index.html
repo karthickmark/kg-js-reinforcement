@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./home.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+</head>
+<body>
+   
+    <div class="main-container">
+        <video autoplay playsinline muted loop id="video-clip">
+            <source src="./assets/bg video ohome.mov" type="video/mp4">
+        </video>
+        <div class="container">
+            <div class="nav-1">
+            <span class="text first-text"><img src="./assets/logo-removebg-preview.png" alt="logo"></span>
+            <span class="text sec-text">| Freelancer</span>
+            </div>
+            <div class="nav-2">
+            <span class="text third-text"><a href="#">upcomings </a>  </span>
+            <span class="text four-text"> | <a href="./login/login.html"> <i class="fa-regular fa-user" style="color: #fafcff;"></i></a></span>
+            </div>
+        </div>
+        <div class="img-games-contents">
+            <div class="img-edit content">
+                <div class="img-edit-text">
+                    <a href="#" id="img-btn" ><h1 id="img-titles" class="img-titles">IMG EDITOR</h1></a>
+                </div>
+                <div class="img-edit-content" id="img-edit-content" >
+                    <div class="container disable">
+                        <center>
+                            <h2>Image Editting App</h2>
+                        </center>
+                        <div class="wrapper">
+                            <div class="editor-panel">
+                                <div class="filter">
+                                    <label class="title">Filters</label>
+                                    <div class="options">
+                                        <button id="brightness" class="active">Brightness</button>
+                                        <button id="saturation">Saturation</button>
+                                        <button id="inversion">Inversion</button>
+                                        <button id="grayscale">Grayscale</button>
+                                    </div>
+                                    <div class="slider">
+                                        <div class="filter-info">
+                                            <p class="name">Brightness</p>
+                                            <p class="value">100%</p>
+                                        </div>
+                                        <input type="range" value="100" min="0" max="200" />
+                                    </div>
+                                </div>
+                                <div class="rotate">
+                                    <label class="title">Rotate & Flip</label>
+                                    <div class="options">
+                                        <button id="left"><i class="fa-solid fa-rotate-left"></i></button>
+                                        <button id="right">
+                                            <i class="fa-solid fa-rotate-right"></i>
+                                        </button>
+                                        <button id="horizontal">
+                                            <i class="bx bx-reflect-vertical"></i>
+                                        </button>
+                                        <button id="vertical">
+                                            <i class="bx bx-reflect-horizontal"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="preview-img">
+                                <img src="./Image Editting/image-placeholder.svg" alt="preview-img" />
+                            </div>
+                        </div>
+                        <div class="controls">
+                            <button class="reset-filter">Reset to default</button>
+                            <div class="row">
+                                <input type="file" class="file-input" accept="image/*" hidden />
+                                <button class="choose-img">Choose Image</button>
+                                <button class="save-img">Save Image</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="games content">
+                <div class="games-name all-games">
+                <a href="#" class="game-btn"><h1 id="game-titles">GAMES</h1></a> 
+                </div>
+                <div class="games-content all-games">
+                    <a href="./hangman quiz/hangman.html" target="_blank">
+                        <div class="img-container">
+                            <div class="jsgames game1"><img src="./assets/hangman-thumbnail.jpg" alt="" class="image"></div>
+                            <div class="game-title">HANG MAN</div>
+                        </div>
+                    </a>
+                    <a href="./snake/snake.html" target="_blank"><div class="img-container">
+                            <div class="jsgames game2"><img src="./assets/Designer (1).png" alt="" class="image"></div>
+                            <div class="game-title">SNAKE</div>
+                        </div>
+                    </a>
+                    <a href="./1 to 100/count.html" target="_blank">
+                        <div class="img-container">
+                            <div class="jsgames game3"><img src="./assets/Designer.png" alt="" class="image"></div>
+                            <div class="game-title">1 to 100</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="center-content">
+            <h1>Hi <span style="color:#fbaa33  ;"> Geek's</span> welcome to our wonderfull website..</h1>
+            <!-- <img src="/assets/flight (online-video-cutter.com).gif" alt=""> -->
+            <p>Are you Ready to Create Somthing new today</p>
+        </div>
+       
+    </div> <div class="footer">
+        <div class="footer-content">
+
+            <a href=""><i class="fa-brands fa-twitter" style="color: #e0e2e3;"> x</i></a>
+            <a href=""><i class="fa-brands fa-linkedin" style="color: #e0e2e3;"> linkedIn</i></a>
+            <a href=""><i class="fa-brands fa-facebook" style="color: #e0e2e5;"> facebook</i></a>
+            <a href=""><i class="fa-brands fa-youtube" style="color: #e0e2e3;"> youtube</i></a>
+            <a href=""><i class="fa-brands fa-discord" style="color: #e0e2e3;"> discord</i></a>
+            <a href=""><i class="fa-brands fa-github" style="color: #e0e2e3;"> github</i></a>
+            <a href=""><i class="fa-brands fa-reddit" style="color: #e0e2e3;"> reddit</i></a>
+        </div>
+    </div>
+</body>
+<script src="./home.js"></script>
+</html>
